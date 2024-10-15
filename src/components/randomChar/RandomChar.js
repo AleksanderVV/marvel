@@ -25,6 +25,7 @@ class RandomChar extends Component {
             char,
             loading: false})
     }
+    
 
     updateChar = () => {
         const id = Math.floor(Math.random() * (1011400 - 1011000) + 1011000);
