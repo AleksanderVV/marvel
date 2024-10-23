@@ -9,12 +9,13 @@ import './charInfo.scss';
 const CharInfo = (props) => {
     const [char, setChar] = useState(null);
 
-    const {loading, error, getCharacter} = useMarvelService();
+    const {loading, error, getCharacter, clearError} = useMarvelService();
 
     // eslint-disable-next-line
     useEffect(() => updateChar(), [props.charId]); 
 
     const updateChar = () => {
+        clearError();
         const {charId} = props;
         if (!charId) {return;}
 
