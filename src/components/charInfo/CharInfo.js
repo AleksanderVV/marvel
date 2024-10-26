@@ -40,7 +40,6 @@ const CharInfo = (props) => {
             {content}
         </div>
     )
-  
 }
 
 const View = ({char}) => {
